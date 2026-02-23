@@ -1,0 +1,9 @@
+{
+  "name": "idea-gpt-image-creator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple image creator web app",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

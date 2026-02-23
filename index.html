@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Creator</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Image Creator</h1>
+      <p class="subtitle">Describe an image and generate it in seconds.</p>
+
+      <form id="generator-form">
+        <label for="prompt">Prompt</label>
+        <textarea
+          id="prompt"
+          name="prompt"
+          rows="4"
+          placeholder="A neon-lit cyberpunk city skyline at sunset"
+          required
+        ></textarea>
+
+        <label for="size">Size</label>
+        <select id="size" name="size">
+          <option value="1024x1024">1024x1024</option>
+          <option value="1024x1536">1024x1536</option>
+          <option value="1536x1024">1536x1024</option>
+        </select>
+
+        <button type="submit">Generate image</button>
+      </form>
+
+      <p id="status" class="status"></p>
+      <img id="result" class="result hidden" alt="Generated output" />
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
